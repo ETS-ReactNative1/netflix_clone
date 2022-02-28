@@ -22,11 +22,15 @@ header nav {
 
 /* logo */
 header nav .logo {
-  width: 20vw;
+  width: 15vw;
   height: fit-content;
   margin: 10px 0 0 10px;
 }
-
+@media (max-width:700px) {
+  header nav .logo {
+    width: 30vw;
+  }
+}
 /* right com */
 header nav .right {
   display: flex;
@@ -53,6 +57,11 @@ header nav .right .btn1 {
   justify-content: center;
   margin-right: 10px;
   cursor: pointer;
+}
+@media (max-width: 700px) {
+  header nav .right .btn1 {
+    height: 20px;
+  }
 }
 header nav .right .btn1 .language_icon {
   width: 20px;
@@ -85,4 +94,9 @@ header nav .right .btn2 {
   cursor: pointer;
   border: none;
   margin-right: 20px;
+}
+@media (max-width: 700px) {
+  header nav .right .btn2 {
+    height: 30px;
+  }
 }
