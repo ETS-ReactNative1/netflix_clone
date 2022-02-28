@@ -1,0 +1,88 @@
+/* Css reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+header {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+
+/* nav */
+header nav {
+  width: 100%;
+  height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* logo */
+header nav .logo {
+  width: 20vw;
+  height: fit-content;
+  margin: 10px 0 0 10px;
+}
+
+/* right com */
+header nav .right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50vw;
+  height: 100%;
+}
+/* btn1 */
+header nav .right .btn1 {
+  width: 80px;
+  height: 28px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 3px;
+  color: white;
+  font-weight: 500;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+header nav .right .btn1 .language_icon {
+  width: 20px;
+  height: 20px;
+}
+header nav .right .btn1 .language_text {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+}
+header nav .right .btn1 option {
+  background-color: silver;
+}
+/* btn2 */
+header nav .right .btn2 {
+  width: 70px;
+  height: 35px;
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: white;
+  font-size: 1em;
+  margin-left: 10px;
+  padding: 0 20px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  margin-right: 20px;
+}
