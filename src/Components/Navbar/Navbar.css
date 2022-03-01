@@ -6,11 +6,10 @@
 
 /* header */
 header {
+  position: relative;
   width: 100%;
-  height: 100vh;
-  background-color: black;
+  height: 100%;
 }
-
 /* nav */
 header nav {
   width: 100%;
@@ -26,7 +25,7 @@ header nav .logo {
   height: fit-content;
   margin: 10px 0 0 10px;
 }
-@media (max-width:700px) {
+@media (max-width: 700px) {
   header nav .logo {
     width: 30vw;
   }
@@ -41,16 +40,15 @@ header nav .right {
 }
 /* btn1 */
 header nav .right .btn1 {
-  width: 80px;
+  width: 85px;
   height: 28px;
-  background: transparent;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   border-radius: 5px;
-  padding: 3px;
+  padding: 3px 0;
+  padding-left: 6px;
   color: white;
-  font-weight: 500;
   border: 2px solid white;
   display: flex;
   align-items: center;
@@ -58,21 +56,27 @@ header nav .right .btn1 {
   margin-right: 10px;
   cursor: pointer;
 }
+
 @media (max-width: 700px) {
   header nav .right .btn1 {
+    width: 80px;
     height: 20px;
   }
 }
 header nav .right .btn1 .language_icon {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
+  margin: 0 2px;
 }
 header nav .right .btn1 .language_text {
   background-color: transparent;
   border: none;
+  margin-right: 6px;
+  font-weight: 700;
   outline: none;
   color: white;
   cursor: pointer;
+  
 }
 header nav .right .btn1 option {
   background-color: silver;
@@ -81,22 +85,125 @@ header nav .right .btn1 option {
 header nav .right .btn2 {
   width: 70px;
   height: 35px;
-  background: red;
+  background-color: rgb(236, 0, 0);
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
   color: white;
   font-size: 1em;
+  font-weight: 700;
   margin-left: 10px;
   padding: 0 20px;
-  font-weight: 500;
   cursor: pointer;
   border: none;
   margin-right: 20px;
 }
+header nav .right .btn2:hover {
+  background-color: red;
+}
 @media (max-width: 700px) {
   header nav .right .btn2 {
     height: 30px;
+  }
+}
+/* main */
+header main {
+  display: block;
+  width: 90%;
+  padding: 75px 0;
+  max-width: 950px;
+  margin: 25px auto;
+  margin-bottom: 0;
+  text-align: center;
+  z-index: 1;
+  font-size: 1.625rem;
+  font-weight: 400;
+  color: #fff;
+}
+@media (max-width: 549px) {
+  header main {
+    padding: 65px 0;
+  }
+}
+/* first */
+header main h1 {
+  font-size: 3.125rem;
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+@media (max-width: 549px) {
+  header main h1 {
+    font-size: 1.75rem;
+    max-width: 350px;
+  }
+}
+/* Second */
+header main h2 {
+  font-size: 1.1rem;
+  margin: 1rem auto;
+  max-width: 800px;
+  font-weight: 500;
+}
+/* third */
+header main h3 {
+  max-width: none;
+  padding-bottom: 20px;
+  font-size: 1.2rem;
+  padding: 0 5%;
+  margin: 0 auto;
+  font-weight: 500;
+}
+@media (max-width: 549px) {
+  header main h3 {
+    font-size: 1rem;
+  }
+}
+main .email_con {
+  max-width: 640px;
+  height: fit-content;
+  display: flex;
+  margin: 25px auto;
+}
+main .email_con #email {
+  display: block;
+  width: 70%;
+  height: 48px;
+  padding: 0 15px;
+  margin: 0 auto;
+  font-size: 0.7em;
+  color: silver;
+  font-weight: 500;
+}
+main .email_con .btn {
+  display: block;
+  width: 30%;
+  height: 52px;
+  font-size: 0.9em;
+  padding: 0 10px;
+  margin: 0 auto;
+  background-color: rgb(236, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+main .email_con .btn:hover {
+  background-color: red;
+}
+@media (max-width: 573px) {
+  main .email_con {
+    flex-wrap: wrap;
+  }
+  main .email_con #email {
+    height: 40px;
+  }
+  main .email_con .btn {
+    width: fit-content;
+    height: 40px;
+    margin: 15px auto;
+    font-size: 0.7em;
   }
 }
