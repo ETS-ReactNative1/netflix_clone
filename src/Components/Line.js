@@ -1,5 +1,5 @@
 import React from 'react'
-import "./line.css"
+import "./Css/line.css"
 
 export default function line() {
   return (
