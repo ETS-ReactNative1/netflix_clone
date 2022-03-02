@@ -1,22 +1,33 @@
 import React from "react";
+import Tv from "./images/tv.png";
 import "./Css/Advertising.css";
 
 export default function Advertising() {
   return (
-    <>
-      <section className="Advertising">
-        <section className="Enjoy_TV">
-          <section className="container">
-            <section className="text">
-              <h1>Enjoy on your TV.</h1>
-              <h2>
-                Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
-                Blu-ray players and more.
-              </h2>
-            </section>
+    <section className="Advertising">
+    {/* first */}
+      <section className="first">
+        <div className="container">
+          <section className="text">
+            <h1>Enjoy on your TV.</h1>
+            <h2>
+              Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
+              Blu-ray players and more.
+            </h2>
           </section>
-        </section>
+          <img src={Tv} alt="Tv" className="Tv"/>
+        </div>
       </section>
-    </>
+      {/* second */}
+      {/* <section className="second">
+        <div>s</div>
+      </section>
+      <section className="third">
+        <div>d</div>
+      </section>
+      <section className="fourth">
+        <div>f</div>
+      </section> */}
+    </section>
   );
 }
