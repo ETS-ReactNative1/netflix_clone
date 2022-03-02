@@ -1,0 +1,36 @@
+.Advertising {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  color: snow;
+  background-color: red;
+}
+.Advertising .Enjoy_TV {
+  width: 100%;
+  height: 100%;
+  background-color: green;
+}
+.Advertising .Enjoy_TV .container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 75px 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: blue;
+}
+.Advertising .Enjoy_TV .container .text{
+    width: 500px;
+    background-color: yellow;
+}
+.Advertising .Enjoy_TV .container .text h1 {
+  font-size: 3.125rem;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+  margin: 0 0 0.4em;
+}
+.Advertising .Enjoy_TV .container .text h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  /* margin: 0.75em 0 0.25em; */
+}
