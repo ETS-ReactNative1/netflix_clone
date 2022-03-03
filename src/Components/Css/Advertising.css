@@ -4,8 +4,8 @@
   height: 100%;
   color: snow;
 }
-/* first */
-.Advertising .first {
+/* box */
+.Advertising > section {
   border-bottom: 8px solid #222;
   padding: 70px 45px;
   margin-bottom: 0;
@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: center;
 }
-.Advertising .first .container {
+.Advertising > section > div {
   max-width: 1100px;
   height: fit-content;
   margin: 0 auto;
@@ -22,184 +22,25 @@
   align-items: center;
   justify-content: space-between;
 }
-.Advertising .first .container .Tv {
-  max-width: 48%;
+/* img */
+.Advertising .first .container img {
   height: auto;
   border: 0;
   margin-bottom: 10px;
 }
-.Advertising .first .container .text {
-  width: 52%;
-  height: 65%;
+/* text con */
+.Advertising > section > div .text {
+  height: 100%;
   flex: 0 1 auto;
-  padding: 0 3rem 0 0;
 }
-.Advertising .first .container .text h1 {
+/* text */
+.Advertising > section .container .text h1 {
   font-size: 3.125rem;
   line-height: 1.1;
   margin: 0 0 0.4em;
   margin-bottom: 0.5rem;
 }
-.Advertising .first .container .text h2 {
+.Advertising > section .container .text h2 {
   font-size: 1.625rem;
   font-weight: 400;
-}
-
-/* Media Quaries */
-@media (max-width: 949px) {
-  .Advertising .first {
-    align-items: flex-start;
-  }
-  .Advertising .first .container {
-    flex-direction: column;
-  }
-  .Advertising .first .container .text {
-    width: 100%;
-    margin: auto;
-  }
-  .Advertising .first .container .text h1 {
-    width: 100%;
-    text-align: center;
-  }
-  .Advertising .first .container .text h2 {
-    width: 100%;
-    font-weight: 400;
-    margin: 0.75em 0 0.25em;
-    text-align: center;
-  }
-  .Advertising .first .container .Tv {
-    max-width: 100%;
-  }
-}
-
-/* h1 */
-@media only screen and (min-width: 550px) and (max-width: 949px) {
-  .Advertising .first .container .text h1 {
-    font-size: 2.5rem;
-  }
-}
-@media only screen and (min-width: 400px) and (max-width: 549px),
-  only screen and (min-width: 350px) and (max-width: 399px),
-  only screen and (max-width: 349px) {
-  .Advertising .first .container .text h1 {
-    font-size: 1.625rem;
-  }
-}
-/* h2 */
-@media only screen and (min-width: 550px) and (max-width: 949px) {
-  .Advertising .first .container .text h2 {
-    font-size: 1.25rem;
-  }
-}
-@media only screen and (min-width: 400px) and (max-width: 549px),
-  only screen and (min-width: 350px) and (max-width: 399px),
-  only screen and (max-width: 349px) {
-  .Advertising .first .container .text h2 {
-    font-size: 1.125rem;
-  }
-}
-/* Second */
-.Advertising .second {
-  border-bottom: 8px solid #222;
-  padding: 70px 45px;
-  margin-bottom: 0;
-  background: 0 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.Advertising .second .container {
-  max-width: 1100px;
-  height: fit-content;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-flow: row-reverse;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-  -webkit-flex-flow: row-reverse;
-}
-.Advertising .second .container .Mobile {
-  max-width: 45%;
-  height: auto;
-  border: 0;
-}
-.Advertising .second .container .text {
-  padding: 0 0 0 3rem;
-  width: 55%;
-  height: 100%;
-  -webkit-box-flex: 0;
-  flex: 0 1 auto;
-  font-size: 1.625rem;
-  font-weight: 400;
-  -webkit-box-direction: reverse;
-}
-.Advertising .second .container .text h1 {
-  font-size: 3.125rem;
-  line-height: 1.1;
-  margin-bottom: 0.5rem;
-}
-.Advertising .second .container .text h2 {
-  font-size: 1.625rem;
-  font-weight: 400;
-  -webkit-box-direction: normal;
-}
-
-@media (max-width: 949px) {
-  .Advertising .second {
-    align-items: flex-start;
-  }
-  .Advertising .second .container {
-    flex-direction: column;
-  }
-  .Advertising .second .container .text {
-    width: 100%;
-    /* margin: auto; */
-    padding: 0;
-  }
-  .Advertising .second .container .text h1 {
-    width: 100%;
-    text-align: center;
-  }
-  .Advertising .second .container .text h2 {
-    width: 100%;
-    font-size: 1.25rem;
-    font-weight: 400;
-    margin: 0.75em 0 0.25em;
-    text-align: center;
-    -webkit-box-direction: normal;
-  }
-  .Advertising .second .container .Mobile {
-    max-width: 100%;
-  }
-}
-
-/* h1 */
-@media only screen and (min-width: 550px) and (max-width: 949px) {
-  .Advertising .second .container .text h1 {
-    font-size: 2.5rem;
-  }
-}
-@media only screen and (min-width: 400px) and (max-width: 549px),
-  only screen and (min-width: 350px) and (max-width: 399px),
-  only screen and (max-width: 349px) {
-  .Advertising .second .container .text h1 {
-    font-size: 1.625rem;
-  }
-}
-/* h2 */
-@media only screen and (min-width: 400px) and (max-width: 549px),
-  only screen and (min-width: 350px) and (max-width: 399px),
-  only screen and (max-width: 349px) {
-  .Advertising .second .container .text h2 {
-    font-size: 1.125rem;
-  }
-}
-@media only screen and (min-width: 400px) and (max-width: 549px),
-  only screen and (min-width: 350px) and (max-width: 399px),
-  only screen and (max-width: 349px) {
-  .Advertising .second .container .text h2 {
-    font-size: 1.125rem;
-  }
 }

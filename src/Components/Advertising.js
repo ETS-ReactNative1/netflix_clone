@@ -1,7 +1,13 @@
 import React from "react";
+// images
 import Tv from "./images/tv.png";
 import Mobile from "./images/mobile.jpg";
+import Device from "./images/device.png";
+import Chillden from "./images/childen.png";
+// css
 import "./Css/Advertising.css";
+import "./Css/First.css";
+import "./Css/Second.css";
 
 export default function Advertising() {
   return (
@@ -16,7 +22,7 @@ export default function Advertising() {
               Blu-ray players and more.
             </h2>
           </section>
-          <img src={Tv} alt="Tv" className="Tv" />
+          <img src={Tv} alt="Tv" className="img1" />
         </div>
       </section>
       {/* second */}
@@ -28,15 +34,34 @@ export default function Advertising() {
               Save your favourites easily and always have something to watch.
             </h2>
           </section>
-          <img src={Mobile} alt="Tv" className="Mobile" />
+          <img src={Mobile} alt="Tv" className="img2" />
         </div>
       </section>
-      {/* <section className="third">
-        <div>d</div>
+      {/* third */}
+      <section className="first">
+        <div className="container">
+          <section className="text">
+            <h1>Watch everywhere.</h1>
+            <h2>
+              Stream unlimited movies and TV shows on your phone, tablet,
+              laptop, and TV.
+            </h2>
+          </section>
+          <img src={Device} alt="Tv" className="img1" />
+        </div>
       </section>
-      <section className="fourth">
-        <div>f</div>
-      </section> */}
+      <section className="second">
+        <div className="container">
+          <section className="text">
+            <h1>Create profiles for children.</h1>
+            <h2>
+              Send children on adventures with their favourite characters in a
+              space made just for them—free with your membership.
+            </h2>
+          </section>
+          <img src={Chillden} alt="Tv" className="img2" />
+        </div>
+      </section>
     </section>
   );
 }
