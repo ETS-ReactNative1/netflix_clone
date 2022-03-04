@@ -1,70 +1,72 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h1>Steps, we will cover in our Complete React JS Projects 👇</h1>
+<ol>
+  <li>Install the Recommended version of NodeJS</li>
+  <button><a href="https://nodejs.org/en/">Node js</a></button>
+  <li>check the version of NodeJS <strong> node -v </strong> on cmd</li>
+  <li>What is React?</li>
+  <li>
+    Install React JS in our system using
+    <strong>"npx create-react-app app_name"</strong>
+  </li>
+  <li>Go to the main directory by typing <strong>cd app_name</strong></li>
+  <li>
+    How to run the React Project 🤔 Oooo It's simple just write the
+    <strong> npm or yarn start </strong> command
+  </li>
+  <li>Understand the folder Structure</li>
+  <li>Remove the Boiler Plate</li>
+  <li>
+    What's New in <strong> React 17th </strong> Version? We will see it after
+    our first component.
+  </li>
+  <li>Vs Code Extension to make our React life Easy</li>
+  <ol>
+    <li>VS Code JavaScript (ES6) snippets</li>
+    <li>ES7 React/Redux/GraphQL/React-Native snippets</li>
+  </ol>
+  <li>Hello World In React JS</li>
+  <li>Our First Component in React JS</li>
+  <ul>
+    <li>
+      >Three things are mandatory & that are import React from "react" any one
+      function (functional Component) It should always return JSX.
+    </li>
+  </ul>
+  <li>
+    After React 17.0 Version, Now no need to write
+    <strong> import React from "react" </strong> Anymore
+  </li>
+  <li><strong>What is JSX? Rules to write JSX</strong></li>
+  <ol>
+    <li>It always return single element</li>
+    <li>use Div or React Fragment to wrap all your JSX Code</li>
+    <li>ClassName in place of class</li>
+    <li>Need to close all non closing Tags in JSX</li>
+    <li>Use camelCase for attributes</li>
+  </ol>
+  <li><strong>Autocomplete for React JSX 😍 Very Important</strong></li>
+  <ol>
+    <li>Open the settings</li>
+    <li>Open Setting(JSON) file located on Top Right Corner</li>
+    <li>
+      Add the following Code => "emmet.includeLanguages": {"javascript":
+      "javascriptreact"},
+    </li>
+  </ol>
+  <li>What is Nested Components?</li>
+  <li>CSS in React JS</li>
+  <li>Props in React JS</li>
+  <li>Props Children????</li>
+  <li><strong>JS important Methods</strong></li>
+  <ol>
+    <li>Map Method</li>
+    <li>Spread Operator & Many More</li>
+  </ol>
+  <li>Events In React JS</li>
+  <li>Todo List Projects</li>
+  <ol>
+    Here is the complete CSS file of Todo List
+  </ol>
+  <li>Weather Application Project</li>
+  <ol>Here is the complete CSS file of Weather Application List</ol>
+</ol>
