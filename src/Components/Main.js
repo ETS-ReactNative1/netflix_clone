@@ -5,16 +5,17 @@ import Mobile from "./images/mobile.jpg";
 import Device from "./images/device.png";
 import Chillden from "./images/childen.png";
 // css
-import "./Css/Advertising.css";
+import "./Css/Main.css";
 import "./Css/First.css";
 import "./Css/Second.css";
+import "./Css/Third.css";
 
-export default function Advertising() {
+export default function Main() {
   return (
     <section className="Advertising">
       {/* first */}
       <section className="first">
-        <div className="container">
+        <div className="advertise">
           <section className="text">
             <h1>Enjoy on your TV.</h1>
             <h2>
@@ -27,7 +28,7 @@ export default function Advertising() {
       </section>
       {/* second */}
       <section className="second">
-        <div className="container">
+        <div className="advertise">
           <section className="text">
             <h1>Download your shows to watch offline.</h1>
             <h2>
@@ -39,7 +40,7 @@ export default function Advertising() {
       </section>
       {/* third */}
       <section className="first">
-        <div className="container">
+        <div className="advertise">
           <section className="text">
             <h1>Watch everywhere.</h1>
             <h2>
@@ -50,8 +51,9 @@ export default function Advertising() {
           <img src={Device} alt="Tv" className="img1" />
         </div>
       </section>
+      {/* fourth */}
       <section className="second">
-        <div className="container">
+        <div className="advertise">
           <section className="text">
             <h1>Create profiles for children.</h1>
             <h2>
@@ -62,6 +64,20 @@ export default function Advertising() {
           <img src={Chillden} alt="Tv" className="img2" />
         </div>
       </section>
+      {/* Fiveth */}
+      {/* <section>
+        <div className="info">
+          <h1>Frequently Asked Questions</h1>
+          <section className="text">
+            <h1>Enjoy on your TV.</h1>
+            <h2>
+              Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
+              Blu-ray players and more.
+            </h2>
+          </section>
+          <img src={Tv} alt="Tv" className="img1" />
+        </div>
+      </section> */}
     </section>
   );
 }

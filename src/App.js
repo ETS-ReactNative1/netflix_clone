@@ -1,12 +1,12 @@
-import Navbar from "./Components/Navbar";
-import Advertising from "./Components/Advertising";
+import Header from "./Components/Header";
+import Main from "./Components/Main";
 
 function App() {
   return (
     <>
       {/* Website */}
-      <Navbar />
-      <Advertising />
+      <Header />
+      <Main />
     </>
   );
 }

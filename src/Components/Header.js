@@ -1,10 +1,10 @@
 import React from "react";
 import logo from "./images/logo.png";
 import language from "./images/language.png";
-import NavbarMain from "./NavbarMain";
-import "./Css/Navbar.css";
+import HeaderMain from "./HeaderMain";
+import "./Css/Header.css";
 
-export default function Navbar() {
+export default function Header() {
   return (
     <header>
       <nav>
@@ -20,7 +20,7 @@ export default function Navbar() {
           <input type="button" value="Sign in" className="btn2" />
         </span>
       </nav>
-      <NavbarMain />
+      <HeaderMain />
     </header>
   );
 }

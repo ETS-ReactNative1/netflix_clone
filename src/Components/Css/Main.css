@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: center;
 }
-.Advertising > section > div {
+.Advertising > section .advertise {
   max-width: 1100px;
   height: fit-content;
   margin: 0 auto;
@@ -23,24 +23,24 @@
   justify-content: space-between;
 }
 /* img */
-.Advertising .first .container img {
+.Advertising > section .advertise img {
   height: auto;
   border: 0;
   margin-bottom: 10px;
 }
 /* text con */
-.Advertising > section > div .text {
+.Advertising > section .advertise .text {
   height: 100%;
   flex: 0 1 auto;
 }
 /* text */
-.Advertising > section .container .text h1 {
+.Advertising > section .advertise .text h1 {
   font-size: 3.125rem;
   line-height: 1.1;
   margin: 0 0 0.4em;
   margin-bottom: 0.5rem;
 }
-.Advertising > section .container .text h2 {
+.Advertising > section .advertise .text h2 {
   font-size: 1.625rem;
   font-weight: 400;
 }
