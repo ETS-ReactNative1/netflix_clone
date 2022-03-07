@@ -4,11 +4,12 @@ import Tv from "./images/tv.png";
 import Mobile from "./images/mobile.jpg";
 import Device from "./images/device.png";
 import Chillden from "./images/childen.png";
+import plus from "./images/plus.svg";
 // css
 import "./Css/Main.css";
 import "./Css/First.css";
 import "./Css/Second.css";
-import "./Css/Third.css";
+import "./Css/Question.css";
 
 export default function Main() {
   return (
@@ -64,20 +65,43 @@ export default function Main() {
           <img src={Chillden} alt="Tv" className="img2" />
         </div>
       </section>
-      {/* Fiveth */}
-      {/* <section>
+      {/* Questions */}
+      <section className="Qus">
         <div className="info">
-          <h1>Frequently Asked Questions</h1>
-          <section className="text">
-            <h1>Enjoy on your TV.</h1>
-            <h2>
-              Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
-              Blu-ray players and more.
-            </h2>
-          </section>
-          <img src={Tv} alt="Tv" className="img1" />
+          <h1 data-uia="faq-title">Frequently Asked Questions</h1>
+          <ul>
+            <li>
+              What is Netflix? <img src={plus} alt="plus" className="icon" />
+            </li>
+            <li>
+              How much does Netflix cost?
+              <img src={plus} alt="plus" className="icon" />
+            </li>
+            <li>
+              Where can I watch? <img src={plus} alt="plus" className="icon" />
+            </li>
+            <li>
+              How do I cancel? <img src={plus} alt="plus" className="icon" />
+            </li>
+            <li>
+              What can I watch on Netflix?
+              <img src={plus} alt="plus" className="icon" />
+            </li>
+            <li>
+              Is Netflix good for kids?
+              <img src={plus} alt="plus" className="icon" />
+            </li>
+          </ul>
+          <h3>
+            Ready to watch? Enter your email to create or restart your
+            membership.
+          </h3>
+          <span className="email_con">
+            <input type="text" id="email" placeholder="Email address" />
+            <span className="btn">Get Started &#62; </span>
+          </span>
         </div>
-      </section> */}
+      </section>
     </section>
   );
 }

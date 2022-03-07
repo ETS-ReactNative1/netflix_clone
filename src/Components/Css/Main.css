@@ -6,6 +6,7 @@
 }
 /* box */
 .Advertising > section {
+  position: relative;
   border-bottom: 8px solid #222;
   padding: 70px 45px;
   margin-bottom: 0;
