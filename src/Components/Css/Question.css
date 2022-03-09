@@ -41,7 +41,7 @@
 /* ul */
 .Advertising > section .info ul {
   max-width: 815px;
-  margin: 2em auto;
+  margin: 1px auto;
   font-size: 1.625rem;
   font-weight: 400;
   overflow: hidden;
@@ -56,9 +56,9 @@
 }
 
 /* li */
-.Advertising > section .info ul li {
+.Advertising > section .info ul li p {
   padding: 0.8em 2.2em 0.8em 1.2em;
-  margin-bottom: 8px;
+  margin-bottom: 2px;
   font-weight: 400;
   position: relative;
   width: 100%;
@@ -77,7 +77,7 @@
   .Advertising > section .info ul {
     width: 100%;
   }
-  .Advertising > section .info ul li {
+  .Advertising > section .info ul li p {
     font-size: 0.7em;
   }
 }
@@ -91,17 +91,48 @@
 }
 
 /* icon */
-.Advertising > section .info ul li .icon {
+.Advertising > section .info ul li p .icon {
   width: 30px;
   height: 30px;
   float: right;
   margin-right: 8%;
 }
 @media only screen and (max-width: 350px) {
-  .Advertising > section .info ul li .icon {
+  .Advertising > section .info ul li p .icon {
     width: 20px;
     height: 20px;
   }
+}
+
+/* show and hide */
+#show1,
+#show2,
+#show3,
+#show4,
+#show5,
+#show6 {
+  padding: 1.2em;
+  margin-top: 1px;
+  margin-bottom: 8px;
+  font-size: 2rem;
+  font-weight: 400;
+  position: relative;
+  width: 100%;
+  border: 0;
+  text-align: left;
+  background: #303030;
+  -webkit-appearance: button;
+  cursor: pointer;
+  display: inline-block;
+  text-align: left;
+  box-sizing: border-box;
+}
+#hide {
+  display: none;
+}
+.Advertising > section .info ul li ul li {
+  list-style: none;
+  font-size: 0.8em;
 }
 /* h3 */
 .Advertising > section .info h3 {
@@ -110,6 +141,7 @@
   margin: 0 auto;
   font-weight: 400;
   text-align: center;
+  margin-top: 25px;
 }
 
 @media only screen and (min-width: 950px) and (max-width: 1449px),
