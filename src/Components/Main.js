@@ -1,177 +1,164 @@
-import React from "react";
-// images
-import Tv from "./images/tv.png";
-import Mobile from "./images/mobile.jpg";
-import Device from "./images/device.png";
-import Chillden from "./images/childen.png";
-// css
-import "./Css/Main.css";
-import "./Css/First.css";
-import "./Css/Second.css";
-import "./Css/Question.css";
+import React, { useState } from 'react';
+// Component
+import Advertise from "./Advertise";
+import Qus from "./Qus";
+import Footer from "./Footer";
+// Image
+import plus from "./images/plus.svg";
+import cross from "./images/x.svg";
 
-export default function Main(props) {
+
+export default function Main() {
+  const [icon1, seticon1] = useState(plus);
+  const [icon2, seticon2] = useState(plus);
+  const [icon3, seticon3] = useState(plus);
+  const [icon4, seticon4] = useState(plus);
+  const [icon5, seticon5] = useState(plus);
+  const [icon6, seticon6] = useState(plus);
+  const [mode1, setMode1] = useState("hide");
+  const [mode2, setMode2] = useState("hide");
+  const [mode3, setMode3] = useState("hide");
+  const [mode4, setMode4] = useState("hide");
+  const [mode5, setMode5] = useState("hide");
+  const [mode6, setMode6] = useState("hide");
+  const Modebtn1 = () => {
+    if (mode1 === "show1") {
+      seticon1(plus);
+      setMode1("hide");
+    } else {
+      seticon1(cross);
+      seticon6(plus);
+      seticon2(plus);
+      seticon3(plus);
+      seticon4(plus);
+      seticon5(plus);
+      setMode1("show1");
+      setMode2("hide");
+      setMode3("hide");
+      setMode4("hide");
+      setMode5("hide");
+      setMode6("hide");
+    }
+  };
+  const Modebtn2 = () => {
+    if (mode2 === "show2") {
+      seticon2(plus);
+      setMode2("hide");
+    } else {
+      seticon2(cross);
+      seticon6(plus);
+      seticon1(plus);
+      seticon3(plus);
+      seticon4(plus);
+      seticon5(plus);
+      setMode2("show2");
+      setMode1("hide");
+      setMode3("hide");
+      setMode4("hide");
+      setMode5("hide");
+      setMode6("hide");
+    }
+  };
+  const Modebtn3 = () => {
+    if (mode3 === "show3") {
+      seticon3(plus);
+      setMode3("hide");
+    } else {
+      seticon3(cross);
+      seticon6(plus);
+      seticon1(plus);
+      seticon2(plus);
+      seticon4(plus);
+      seticon5(plus);
+      setMode3("show3");
+      setMode2("hide");
+      setMode1("hide");
+      setMode4("hide");
+      setMode5("hide");
+      setMode6("hide");
+    }
+  };
+  const Modebtn4 = () => {
+    if (mode4 === "show4") {
+      seticon4(plus);
+      setMode4("hide");
+    } else {
+      seticon4(cross);
+      seticon6(plus);
+      seticon1(plus);
+      seticon2(plus);
+      seticon3(plus);
+      seticon5(plus);
+      setMode4("show4");
+      setMode2("hide");
+      setMode3("hide");
+      setMode1("hide");
+      setMode5("hide");
+      setMode6("hide");
+    }
+  };
+  const Modebtn5 = () => {
+    if (mode5 === "show5") {
+      seticon5(plus);
+      setMode5("hide");
+    } else {
+      seticon5(cross);
+      seticon6(plus);
+      seticon1(plus);
+      seticon2(plus);
+      seticon3(plus);
+      seticon4(plus);
+      setMode5("show5");
+      setMode2("hide");
+      setMode3("hide");
+      setMode4("hide");
+      setMode1("hide");
+      setMode6("hide");
+    }
+  };
+  const Modebtn6 = () => {
+    if (mode6 === "show6") {
+      seticon6(plus);
+      setMode6("hide");
+    } else {
+      seticon6(cross);
+      seticon1(plus);
+      seticon2(plus);
+      seticon3(plus);
+      seticon4(plus);
+      seticon5(plus);
+      setMode6("show6");
+      setMode2("hide");
+      setMode3("hide");
+      setMode4("hide");
+      setMode5("hide");
+      setMode1("hide");
+    }
+  };
   return (
     <section className="Advertising">
-      {/* first */}
-      <section className="first">
-        <div className="advertise">
-          <section className="text">
-            <h1>Enjoy on your TV.</h1>
-            <h2>
-              Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
-              Blu-ray players and more.
-            </h2>
-          </section>
-          <img src={Tv} alt="Tv" className="img1" />
-        </div>
-      </section>
-      {/* second */}
-      <section className="second">
-        <div className="advertise">
-          <section className="text">
-            <h1>Download your shows to watch offline.</h1>
-            <h2>
-              Save your favourites easily and always have something to watch.
-            </h2>
-          </section>
-          <img src={Mobile} alt="Tv" className="img2" />
-        </div>
-      </section>
-      {/* third */}
-      <section className="first">
-        <div className="advertise">
-          <section className="text">
-            <h1>Watch everywhere.</h1>
-            <h2>
-              Stream unlimited movies and TV shows on your phone, tablet,
-              laptop, and TV.
-            </h2>
-          </section>
-          <img src={Device} alt="Tv" className="img1" />
-        </div>
-      </section>
-      {/* fourth */}
-      <section className="second">
-        <div className="advertise">
-          <section className="text">
-            <h1>Create profiles for children.</h1>
-            <h2>
-              Send children on adventures with their favourite characters in a
-              space made just for them—free with your membership.
-            </h2>
-          </section>
-          <img src={Chillden} alt="Tv" className="img2" />
-        </div>
-      </section>
-      {/* Questions */}
-      <section className="Qus">
-        <div className="info">
-          <h1 data-uia="faq-title">Frequently Asked Questions</h1>
-          <ul>
-            <li>
-              <p onClick={props.Modebtn1}>
-                What is Netflix? <img src={props.icon1} alt="plus" className="icon" />
-              </p>
-              <ul id={props.mode1}>
-                <li>
-                  Netflix is a streaming service that offers a wide variety of
-                  award-winning TV shows, movies, anime, documentaries and more
-                  – on thousands of internet-connected devices. <br /> <br />
-                  You can watch as much as you want, whenever you want, without
-                  a single ad – all for one low monthly price. There's always
-                  something new to discover, and new TV shows and movies are
-                  added every week!
-                </li>
-              </ul>
-            </li>
-            <li>
-            <p onClick={props.Modebtn2}>
-                How much does Netflix cost?
-                <img src={props.icon2} alt="plus" className="icon" />
-              </p>
-              <ul id={props.mode2}>
-                <li>
-                  Watch Netflix on your smartphone, tablet, Smart TV, laptop, or
-                  streaming device, all for one fixed monthly fee. Plans range
-                  from ₹ 149 to ₹ 649 a month. No extra costs, no contracts.
-                </li>
-              </ul>
-            </li>
-            <li>
-            <p onClick={props.Modebtn3}>
-                Where can I watch?
-                <img src={props.icon3} alt="plus" className="icon" />
-              </p>
-              <ul id={props.mode3}>
-                <li>
-                  Watch anywhere, anytime. Sign in with your Netflix account to
-                  watch instantly on the web at netflix.com from your personal
-                  computer or on any internet-connected device that offers the
-                  Netflix app, including smart TVs, smartphones, tablets,
-                  streaming media players and game consoles. <br /> <br />
-                  You can also download your favourite shows with the iOS,
-                  Android, or Windows 10 app. Use downloads to watch while
-                  you're on the go and without an internet connection. Take
-                  Netflix with you anywhere.
-                </li>
-              </ul>
-            </li>
-            <li>
-            <p onClick={props.Modebtn4}>
-                How do I cancel? <img src={props.icon4} alt="plus" className="icon" />
-              </p>
-              <ul id={props.mode4}>
-                <li>
-                  Netflix is flexible. There are no annoying contracts and no
-                  commitments. You can easily cancel your account online in two
-                  clicks. There are no cancellation fees – start or stop your
-                  account anytime.
-                </li>
-              </ul>
-            </li>
-            <li>
-            <p onClick={props.Modebtn5}>
-                What can I watch on Netflix?
-                <img src={props.icon5} alt="plus" className="icon" />
-              </p>
-              <ul id={props.mode5}>
-                <li>
-                  Netflix has an extensive library of feature films,
-                  documentaries, TV shows, anime, award-winning Netflix
-                  originals, and more. Watch as much as you want, anytime you
-                  want.
-                </li>
-              </ul>
-            </li>
-            <li>
-            <p onClick={props.Modebtn6}>
-                Is Netflix good for kids?
-                <img src={props.icon6} alt="plus" className="icon" />
-              </p>
-              <ul id={props.mode6}>
-                <li>
-                  Kids profiles come with PIN-protected parental controls that
-                  let you restrict the maturity rating of content kids can watch
-                  and block specific titles you don’t want kids to see. <br />
-                  <br />
-                  Kids profiles come with PIN-protected parental controls that
-                  let you restrict the maturity rating of content kids can watch
-                  and block specific titles you don’t want kids to see.
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <h3>
-            Ready to watch? Enter your email to create or restart your
-            membership.
-          </h3>
-          <span className="email_con">
-            <input type="text" id="email" placeholder="Email address" />
-            <span className="btn">Get Started &#62; </span>
-          </span>
-        </div>
-      </section>
+      <Advertise />
+      <Qus
+        icon1={icon1}
+        icon2={icon2}
+        icon3={icon3}
+        icon4={icon4}
+        icon5={icon5}
+        icon6={icon6}
+        mode1={mode1}
+        Modebtn1={Modebtn1}
+        mode2={mode2}
+        Modebtn2={Modebtn2}
+        mode3={mode3}
+        Modebtn3={Modebtn3}
+        mode4={mode4}
+        Modebtn4={Modebtn4}
+        mode5={mode5}
+        Modebtn5={Modebtn5}
+        mode6={mode6}
+        Modebtn6={Modebtn6}
+      />
+      {/* <Footer /> */}
     </section>
   );
 }

@@ -78,7 +78,7 @@
     width: 100%;
   }
   .Advertising > section .info ul li p {
-    font-size: 0.7em;
+    font-size: 1.25rem;
   }
 }
 @media only screen and (max-width: 350px) {
@@ -86,7 +86,7 @@
     width: 100%;
   }
   .Advertising > section .info ul li {
-    font-size: 0.6em;
+    font-size: 1.125rem;
   }
 }
 
@@ -111,10 +111,10 @@
 #show4,
 #show5,
 #show6 {
-  padding: 1.2em;
+  padding: 1em;
+  padding-right: 5px;
   margin-top: 1px;
   margin-bottom: 8px;
-  font-size: 2rem;
   font-weight: 400;
   position: relative;
   width: 100%;
@@ -131,9 +131,23 @@
   display: none;
 }
 .Advertising > section .info ul li ul li {
-  list-style: none;
-  font-size: 0.8em;
+  display: inline-block;
+  text-align: left;
+  list-style-type: none;
+  /* font-size: 1.625rem; */
+  font-weight: 400;
 }
+@media only screen and (max-width: 550px) {
+  .Advertising > section .info ul li ul li {
+    font-size: 1.10rem;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .Advertising > section .info ul li ul li {
+    font-size: 1.110rem;
+  }
+}
+
 /* h3 */
 .Advertising > section .info h3 {
   padding: 0 5%;
