@@ -158,7 +158,7 @@ export default function Main() {
         mode6={mode6}
         Modebtn6={Modebtn6}
       />
-      {/* <Footer /> */}
+      <Footer />
     </section>
   );
 }
