@@ -50,14 +50,13 @@ header nav .right {
 }
 /* btn1 */
 header nav .right .btn1 {
-  width: 85px;
+  width: fit-content;
   height: 28px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-radius: 5px;
-  padding: 3px 0;
-  padding-left: 6px;
+  padding: 5px;
   color: white;
   border: 2px solid white;
   display: flex;
@@ -81,7 +80,6 @@ header nav .right .btn1 .language_icon {
 header nav .right .btn1 .language_text {
   background-color: transparent;
   border: none;
-  margin-right: 6px;
   font-weight: 700;
   outline: none;
   color: white;

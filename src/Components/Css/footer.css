@@ -20,6 +20,7 @@ footer {
 }
 /* Container */
 footer .container {
+  display: block;
   padding-top: 0;
   margin: 0 auto;
   font-size: 1em;
@@ -31,10 +32,6 @@ footer .container .footer-top {
   padding: 0;
   margin: 0 0 30px;
   display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
   font-size: 1em;
   color: #757575;
 }
@@ -47,14 +44,9 @@ footer .container .footer-top a {
   padding-left: 5px;
 }
 /* ul */
-ul.structural {
+ul.footer-links.structural {
   display: block;
   list-style-type: none;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
 }
 .footer-links {
   max-width: 1000px;
@@ -81,8 +73,6 @@ ul.structural > li {
   vertical-align: top;
 }
 .footer-link-item {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
   margin-bottom: 16px;
@@ -91,6 +81,16 @@ ul.structural > li {
   width: 25%;
   padding-right: 12px;
   vertical-align: top;
+}
+@media only screen and (max-width: 500px) {
+  .footer-link-item {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 740px) {
+  .footer-link-item {
+    width: 33%;
+  }
 }
 .footer-links {
   max-width: 1000px;
@@ -103,6 +103,7 @@ ul.structural > li {
 .footer-link {
   color: #757575;
   text-decoration: none;
+  width: 100%;
 }
 a:-webkit-any-link {
   color: -webkit-link;
@@ -113,4 +114,48 @@ a:-webkit-any-link {
   text-align: -webkit-match-parent;
   list-style: none;
   margin-left: 0;
+}
+.footer-link span {
+  width: 100%;
+}
+/* btn1 */
+footer .container .btn1 {
+  width: 100px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px 0;
+  padding-left: 6px;
+  color: white;
+  border: 2px solid #757575;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+footer .container .btn1 .language_icon {
+  width: 18px;
+  height: 18px;
+  margin: 0 2px;
+  padding-left: 5px;
+}
+footer .container .btn1 .language_text {
+  width: max-content;
+  height: max-content;
+  background-color: transparent;
+  border: none;
+  margin-right: 10px;
+  font-weight: 700;
+  outline: none;
+  color: #757575;
+  cursor: pointer;
+}
+footer .container p{
+  font-size: 13px;
+  margin-top: 24px;
+  font-size: 1em;
+  color: #757575;
 }

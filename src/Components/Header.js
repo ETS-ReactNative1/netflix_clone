@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "./images/logo.png";
-import language from "./images/language.png";
+import language from "./images/lang1.svg";
 import HeaderMain from "./HeaderMain";
 import "./Css/Header.css";
 

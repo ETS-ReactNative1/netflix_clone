@@ -1,17 +1,16 @@
 import React from "react";
 import "./Css/footer.css";
+import language from "./images/lang2.svg";
 
 const Footer = () => {
   return (
     <footer>
-      <span className="container">
+      <div className="container">
         <p class="footer-top">
           Questions? Call
-          <a href="tel:000-800-040-1843 ">
-            000-800-040-1843
-          </a>
+          <a href="tel:000-800-040-1843 ">000-800-040-1843</a>
         </p>
-        <ul class="footer-links structural">
+        <ul class="footer-links.structural">
           <li
             class="footer-link-item"
             placeholder="footer_responsive_link_faq_item"
@@ -210,7 +209,15 @@ const Footer = () => {
             </a>
           </li>
         </ul>
-      </span>
+        <span className="btn1">
+          <img src={language} alt="language" className="language_icon" />
+          <select name="language" className="language_text">
+            <option value="English">English</option>
+            <option value="हिन्दी">हिन्दी</option>
+          </select>
+        </span>
+        <p className="last">Netflix India</p>
+      </div>
     </footer>
   );
 };
