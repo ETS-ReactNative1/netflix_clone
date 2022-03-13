@@ -6,9 +6,11 @@ import Footer from "./Footer";
 // Image
 import plus from "./images/plus.svg";
 import cross from "./images/x.svg";
-
+// Data
+import question from './Qus.json';
 
 export default function Main() {
+  const [questionApi, setquestionApi] = useState(question);
   const [icon1, seticon1] = useState(plus);
   const [icon2, seticon2] = useState(plus);
   const [icon3, seticon3] = useState(plus);
@@ -137,7 +139,7 @@ export default function Main() {
   };
   return (
     <section className="Advertising">
-      <Advertise />
+      <Advertise questionApi={questionApi}/>
       <Qus
         icon1={icon1}
         icon2={icon2}
