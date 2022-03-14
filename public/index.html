@@ -15,8 +15,17 @@
     <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
   </head>
   <!-- body -->
-  <body>
+  <body onload="loading()">
+    <!-- loading -->
+    <div id="loading"></div>
+    <!-- website -->
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script>
+      var preloader = document.getElementById("loading");
+      function loading(){
+        preloader.style.display = 'none';
+      };
+    </script>
   </body>
 </html>
