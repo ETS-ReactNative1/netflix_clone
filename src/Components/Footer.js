@@ -18,7 +18,7 @@ const Footer = () => {
             <a
               class="footer-link"
               data-uia="footer-link"
-              href="#"
+              href="/"
               placeholder="footer_responsive_link_faq"
             >
               <span data-uia="data-uia-footer-label">FAQ</span>
@@ -31,7 +31,7 @@ const Footer = () => {
             <a
               class="footer-link"
               data-uia="footer-link"
-              href="#"
+              href="/"
               placeholder="footer_responsive_link_help"
             >
               <span data-uia="data-uia-footer-label">Help Centre</span>
@@ -44,7 +44,7 @@ const Footer = () => {
             <a
               class="footer-link"
               data-uia="footer-link"
-              href="#"
+              href="/"
               placeholder="footer_responsive_link_account"
             >
               <span data-uia="data-uia-footer-label">Account</span>
@@ -57,7 +57,7 @@ const Footer = () => {
             <a
               class="footer-link"
               data-uia="footer-link"
-              href="#"
+              href="/"
               placeholder="footer_responsive_link_media_center"
             >
               <span data-uia="data-uia-footer-label">Media Centre</span>
@@ -70,7 +70,7 @@ const Footer = () => {
             <a
               class="footer-link"
               data-uia="footer-link"
-              href="#"
+              href="/"
               placeholder="footer_responsive_link_relations"
             >
               <span data-uia="data-uia-footer-label">Investor Relations</span>
@@ -83,7 +83,7 @@ const Footer = () => {
             <a
               class="footer-link"
               data-uia="footer-link"
-              href="#"
+              href="/"
               placeholder="footer_responsive_link_jobs"
             >
               <span data-uia="data-uia-footer-label">Jobs</span>
@@ -96,7 +96,7 @@ const Footer = () => {
             <a
               class="footer-link"
               data-uia="footer-link"
-              href="#"
+              href="/"
               placeholder="footer_responsive_link_waysToWatch"
             >
               <span data-uia="data-uia-footer-label">Ways to Watch</span>
@@ -109,7 +109,7 @@ const Footer = () => {
             <a
               class="footer-link"
               data-uia="footer-link"
-              href="#"
+              href="/"
               placeholder="footer_responsive_link_terms"
             >
               <span data-uia="data-uia-footer-label">Terms of Use</span>
@@ -122,7 +122,7 @@ const Footer = () => {
             <a
               class="footer-link"
               data-uia="footer-link"
-              href="#"
+              href="/"
               placeholder="footer_responsive_link_privacy_separate_link"
             >
               <span data-uia="data-uia-footer-label">Privacy</span>
@@ -135,7 +135,7 @@ const Footer = () => {
             <a
               class="footer-link"
               data-uia="footer-link"
-              href="#"
+              href="/"
               placeholder="footer_responsive_link_cookies_separate_link"
             >
               <span data-uia="data-uia-footer-label">Cookie Preferences</span>
@@ -148,7 +148,7 @@ const Footer = () => {
             <a
               class="footer-link"
               data-uia="footer-link"
-              href="#"
+              href="/"
               placeholder="footer_responsive_link_corporate_information"
             >
               <span data-uia="data-uia-footer-label">
@@ -163,7 +163,7 @@ const Footer = () => {
             <a
               class="footer-link"
               data-uia="footer-link"
-              href="#"
+              href="/"
               placeholder="footer_responsive_link_contact_us"
             >
               <span data-uia="data-uia-footer-label">Contact Us</span>
@@ -176,7 +176,7 @@ const Footer = () => {
             <a
               class="footer-link"
               data-uia="footer-link"
-              href="#"
+              href="/"
               placeholder="footer_responsive_link_speed_test"
             >
               <span data-uia="data-uia-footer-label">Speed Test</span>
@@ -189,7 +189,7 @@ const Footer = () => {
             <a
               class="footer-link"
               data-uia="footer-link"
-              href="#"
+              href="/"
               placeholder="footer_responsive_link_legal_notices"
             >
               <span data-uia="data-uia-footer-label">Legal Notices</span>
@@ -202,7 +202,7 @@ const Footer = () => {
             <a
               class="footer-link"
               data-uia="footer-link"
-              href="#"
+              href="/"
               placeholder="footer_responsive_link_only_on_netflix"
             >
               <span data-uia="data-uia-footer-label">Only on Netflix</span>

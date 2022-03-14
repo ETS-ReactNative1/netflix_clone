@@ -24,7 +24,7 @@ const Advertise = ({ questionApi }) => {
                     {curElem.Description}
                     </h2>
                   </section>
-                  <img src={curElem.image} alt={curElem.alt} className="img1" />
+                  <img src={curElem.image} alt={curElem.alt} className={curElem.class2} />
                 </div>
               </section>
             </>
