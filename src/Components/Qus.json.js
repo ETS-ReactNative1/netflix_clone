@@ -5,6 +5,8 @@ let Question = [
     Description: `Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV,Blu-ray players and more.`,
     class: "first",
     class2: "img1",
+    Animation2: "zoom-in-left",
+    Animation: "zoom-in-right",
     image: "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png",
     alt: "Tv"
   },
@@ -14,6 +16,8 @@ let Question = [
     Description: `Save your favourites easily and always have something to watch.`,
     class: "second",
     class2: "img2",
+    Animation: "zoom-in-left",
+    Animation2: "zoom-in-right",
     image: "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg",
     alt: "Download"
   },
@@ -24,6 +28,8 @@ let Question = [
     laptop, and TV.`,
     class: "first",
     class2: "img1",
+    Animation2: "zoom-in-left",
+    Animation: "zoom-in-right",
     image: "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png",
     alt: "Watch"
   },
@@ -34,6 +40,8 @@ let Question = [
     space made just for them—free with your membership.`,
     class: "second",
     class2: "img2",
+    Animation: "zoom-in-left",
+    Animation2: "zoom-in-right",
     image: "https://occ-0-2483-3646.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVxdX2WnFSp49eXb1do0euaj-F8upNImjofE77XStKhf5kUHG94DPlTiGYqPeYNtiox-82NWEK0Ls3CnLe3WWClGdiJP.png?r=5cf",
     alt: "Children"
   },

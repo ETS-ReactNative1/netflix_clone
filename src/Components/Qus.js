@@ -1,15 +1,24 @@
-import React from 'react'
+import React, { useEffect } from "react";
 import "./Css/Question.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Qus = (props) => {
+  useEffect(() => {
+    Aos.init({
+      duration: 1100,
+      easing: "ease-in-out",
+      mirror: true
+    });
+  }, []);
   return (
       <section className="Qus">
         <div className="info">
-          <h1 data-uia="faq-title">Frequently Asked Questions</h1>
+          <h1 data-uia="faq-title" data-aos="zoom-in">Frequently Asked Questions</h1>
           <ul>
           {/* first */}
             <li>
-              <p onClick={props.Modebtn1}>
+              <p onClick={props.Modebtn1} data-aos="zoom-in">
                 What is Netflix? <img src={props.icon1} alt="plus" className="icon" />
               </p>
               <ul id={props.mode1}>
@@ -26,7 +35,7 @@ const Qus = (props) => {
             </li>
             {/* second */}
             <li>
-            <p onClick={props.Modebtn2}>
+            <p onClick={props.Modebtn2} data-aos="zoom-in">
                 How much does Netflix cost?
                 <img src={props.icon2} alt="plus" className="icon" />
               </p>
@@ -40,7 +49,7 @@ const Qus = (props) => {
             </li>
             {/* Third */}
             <li>
-            <p onClick={props.Modebtn3}>
+            <p onClick={props.Modebtn3} data-aos="zoom-in">
                 Where can I watch?
                 <img src={props.icon3} alt="plus" className="icon" />
               </p>
@@ -60,7 +69,7 @@ const Qus = (props) => {
             </li>
             {/* Forth */}
             <li>
-            <p onClick={props.Modebtn4}>
+            <p onClick={props.Modebtn4} data-aos="zoom-in">
                 How do I cancel? <img src={props.icon4} alt="plus" className="icon" />
               </p>
               <ul id={props.mode4}>
@@ -74,7 +83,7 @@ const Qus = (props) => {
             </li>
             {/* Fiveth */}
             <li>
-            <p onClick={props.Modebtn5}>
+            <p onClick={props.Modebtn5} data-aos="zoom-in">
                 What can I watch on Netflix?
                 <img src={props.icon5} alt="plus" className="icon" />
               </p>
@@ -89,7 +98,7 @@ const Qus = (props) => {
             </li>
             {/* Sixth */}
             <li>
-            <p onClick={props.Modebtn6}>
+            <p onClick={props.Modebtn6} data-aos="zoom-in">
                 Is Netflix good for kids?
                 <img src={props.icon6} alt="plus" className="icon" />
               </p>
@@ -106,11 +115,11 @@ const Qus = (props) => {
               </ul>
             </li>
           </ul>
-          <h3>
+          <h3 data-aos="zoom-in">
             Ready to watch? Enter your email to create or restart your
             membership.
           </h3>
-          <span className="email_con">
+          <span className="email_con" data-aos="zoom-in">
             <input type="text" id="email" placeholder="Email address" />
             <span className="btn">Get Started &#62; </span>
           </span>
