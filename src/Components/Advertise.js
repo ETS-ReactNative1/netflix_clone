@@ -8,12 +8,8 @@ import "./Css/Second.css";
 
 const Advertise = ({ questionApi }) => {
   useEffect(() => {
-    Aos.init({
-      duration: 1100,
-      easing: "ease-in-out",
-      mirror: true
-    });
-  }, []);
+    Aos.refresh();
+  }, [1000]);
   return (
     <>
       {questionApi.map((curElem) => {
